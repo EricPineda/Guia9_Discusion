@@ -5,13 +5,13 @@ import { createAppContainer } from 'react-navigation'
 import { StyleSheet, Text, View, Button } from 'react-native'
 import WebScreen from './WebScreen'
 const AppNavigator = createStackNavigator({
-  Home: {
+  Principal: {
     screen: HomeScreen
   },
-  Web: {
+  WebView: {
     screen: WebScreen
   }
-}, { initialRouteName: 'Home' })
+}, { initialRouteName: 'Principal' })
 export default createAppContainer(AppNavigator)
 const styles = StyleSheet.create({
   container: {

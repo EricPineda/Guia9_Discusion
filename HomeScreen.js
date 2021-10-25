@@ -5,14 +5,14 @@ export default class HomeScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={{ color: '#674', fontSize: 25, fontWeight: 'bold' }}>
-                    MIS SITIOS ARQUEOLOGICOS
+                <Text style={{ color: '#74b543', fontSize: 25, fontWeight: 'bold' }}>
+                    App html en WebView
                 </Text>
 
                 <TouchableHighlight
                     style={styles.botones}
                     onPress={() =>
-                        this.props.navigation.navigate('Web', {
+                        this.props.navigation.navigate('WebView', {
                             sitio: 'casablanca',
                         })
                     }>
@@ -34,11 +34,12 @@ const styles = StyleSheet.create({
     botones: {
         height: 40,
         width: 300,
-        borderRadius: 10,
-        backgroundColor: '#abc',
+        borderRadius: 100,
+        backgroundColor: '#debd47',
         marginLeft: 50,
         marginRight: 50,
         marginTop: 20,
+        marginBottom: 20,
         justifyContent: 'center',
         alignItems: 'center',
     },
